@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">HackDay</string>
+
+    <string-array name="menu">
+        <item>主页</item>
+        <item>历史记录</item>
+        <item>管理本地</item>
+    </string-array>
+    <string-array name="fragment">
+        <item>com.unique.hackday.fragment.MainFragment</item>
+        <item>com.unique.hackday.fragment.HistoryFragment</item>
+        <item>com.unique.hackday.fragment.SettingFragment</item>
+    </string-array>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="about_text">关于我们</string>
+    <string name="drawer_open">打开</string>
+    <string name="drawer_close">关闭</string>
+    <string name="setting_text">设置</string>
+    <string name="history_text">历史记录</string>
+    <string name="main_text">主页</string>
+    <string name="about_us_text">hack day</string>
+    <string name="main_text_head">头部</string>
+    <string name="main_text_up">上身</string>
+    <string name="main_text_down">下身</string>
+
+    <string name="item_head">头</string>
+    <string name="item_nose">鼻</string>
+    <string name="item_eye">眼</string>
+    <string name="item_mouth">嘴</string>
+    <string name="item_brow">眉</string>
+    <string name="item_other">其他</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
