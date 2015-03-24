@@ -52,7 +52,7 @@ public class BitmapUtil {
         }
         return "";
     }
-    private static Bitmap createRGBImage(Bitmap bitmap,int color){
+    public static Bitmap createRGBImage(Bitmap bitmap,int color){
         int bitmap_w=bitmap.getWidth();
         int bitmap_h=bitmap.getHeight();
         int[] arrayColor=new int[bitmap_w*bitmap_h];
@@ -72,7 +72,7 @@ public class BitmapUtil {
         bitmap = Bitmap.createBitmap( arrayColor, bitmap_w, bitmap_h, Bitmap.Config.ARGB_8888 ).copy(Bitmap.Config.ARGB_8888,true);
         return bitmap;
     }
-    private static Bitmap mixtureBitmap(Bitmap bitmap,ArrayList<EmojiBean> emojiBeanArrayList,int minX,int minY){
+    public static Bitmap mixtureBitmap(Bitmap bitmap,ArrayList<EmojiBean> emojiBeanArrayList,int minX,int minY){
         Canvas cv=new Canvas(bitmap);
 
         Paint paint=new Paint();
@@ -108,7 +108,7 @@ public class BitmapUtil {
         ArrayList<Integer> minY=new ArrayList<>();
         Bitmap bitmap;
         for(int i=0;i<viewGroup.getChildCount();i++){
-            ImageView iv=(ImageView)viewGroup.getChildAt(i);
+            ImageView iv=(ImageView)(viewGroup.getChildAt(i));
 
             maxX.add((int) iv.getX() + iv.getWidth());
             maxY.add((int) iv.getY() + iv.getHeight());

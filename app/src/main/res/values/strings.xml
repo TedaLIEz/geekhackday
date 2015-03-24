@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HackDay</string>
+    <string name="app_name">Q拼</string>
 
     <string-array name="menu">
         <item>主页</item>
